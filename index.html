@@ -6,11 +6,49 @@
   <link href="./src/css/output.css" rel="stylesheet">
    <!-- Feather Icons -->
    <script src="https://unpkg.com/feather-icons"></script>
+   <style>
+    @keyframes loading {
+      0% {
+        width: 0%;
+      }
+      50% {
+        width: 50%;
+      }
+      100% {
+        width: 100%;
+      }
+    }
+    .loading-bar {
+      animation: loading 2s infinite;
+    }
+  </style>
 </head>
 <body>
-  <h1 class="text-3xl font-bold underline text-center">
-    Hello world!
-  </h1>
+    <div class="flex justify-center items-center min-h-screen bg-white">
+        <div class="max-w-sm rounded-lg shadow-md overflow-hidden bg-gray-300 px-6 py-4">
+            <div class="flex justify-between items-center mb-2">
+            </div>
+            <img src="./src/img/firefly.jpeg" alt="Firefly" class="w-full mb-4 rounded-sm">
+            <h2 class="text-white font-bold text-4xl mb-2">SEPARUH AKU</h2>
+            <p class="text-white font-semibold text-xl mb-4">~Noah</p>
+            <div class="w-full max-w-xl bg-gray-200 rounded-full h-6 mx-auto mb-6">
+    <div class="bg-white h-6 rounded-full loading-bar"></div>
+  </div>
+            <div class="flex justify-between items-center mb-2">
+                <i data-feather="repeat"></i>
+                <i data-feather="skip-back"></i>
+                <i data-feather="pause-circle"></i>
+                <i data-feather="skip-forward"></i>
+                <i data-feather="sliders"></i>
+            </div>
+                    
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+
 
 
    <!-- Feather Icons -->
